@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productivity_featureds",
+  "info": {
+    "singularName": "productivity-featured",
+    "pluralName": "productivity-featureds",
+    "displayName": "productivity & career featured",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Finance",
+        "Health & Wellness",
+        "Relationships",
+        "Productivity & Career",
+        "Self-Help & Growth",
+        "Lifestyle & Culture",
+        "Weird & Absurd"
+      ],
+      "default": "Productivity & Career"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "views": {
+      "default": 0,
+      "type": "integer"
+    },
+    "lastViewed": {
+      "type": "datetime"
+    },
+    "featuredInPopular": {
+      "type": "boolean"
+    },
+    "storyId": {
+      "type": "integer"
+    }
+  }
+}

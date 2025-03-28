@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_stories",
+  "info": {
+    "singularName": "main-story",
+    "pluralName": "main-stories",
+    "displayName": "main-story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "storyId": {
+      "required": true,
+      "type": "integer"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Finance",
+        "Health & Wellness",
+        "Relationships",
+        "Productivity & Career",
+        "SelfHelp & Growth",
+        "Lifestyle & Culture",
+        "Weird & Absurd"
+      ]
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    },
+    "lastViewed": {
+      "type": "datetime"
+    },
+    "featuredInPopular": {
+      "type": "boolean"
+    }
+  }
+}

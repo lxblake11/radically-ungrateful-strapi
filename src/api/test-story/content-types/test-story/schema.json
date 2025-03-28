@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_stories",
+  "info": {
+    "singularName": "test-story",
+    "pluralName": "test-stories",
+    "displayName": "test-story"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_stories",
+  "info": {
+    "singularName": "latest-story",
+    "pluralName": "latest-stories",
+    "displayName": "Latest Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Finance",
+        "Health & Wellness",
+        "Relationships",
+        "Productivity & Career",
+        "Self-Help & Growth",
+        "Lifestyle & Culture",
+        "Weird & Absurd"
+      ]
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    },
+    "featuredInPopular": {
+      "type": "boolean"
+    },
+    "lastViewed": {
+      "type": "datetime"
+    },
+    "storyId": {
+      "type": "integer"
+    }
+  }
+}

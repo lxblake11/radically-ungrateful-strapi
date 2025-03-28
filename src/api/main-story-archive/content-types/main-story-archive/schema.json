@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_story_archives",
+  "info": {
+    "singularName": "main-story-archive",
+    "pluralName": "main-story-archives",
+    "displayName": "main-story-archived"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

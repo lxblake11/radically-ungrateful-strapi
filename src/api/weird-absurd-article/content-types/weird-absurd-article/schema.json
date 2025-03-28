@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weird_absurd_articles",
+  "info": {
+    "singularName": "weird-absurd-article",
+    "pluralName": "weird-absurd-articles",
+    "displayName": "weird-absurd-article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Finance",
+        "Health & Wellness",
+        "Relationships",
+        "Productivity & Career",
+        "Self-Help & Growth",
+        "Lifestyle & Culture",
+        "Weird & Absurd"
+      ]
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "views": {
+      "type": "integer"
+    },
+    "lastViewed": {
+      "type": "datetime"
+    },
+    "featuredInPopular": {
+      "type": "boolean"
+    },
+    "storyId": {
+      "type": "integer"
+    }
+  }
+}

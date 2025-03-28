@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "health_wellness_articles",
+  "info": {
+    "singularName": "health-wellness-article",
+    "pluralName": "health-wellness-articles",
+    "displayName": "health-wellness-article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Finance",
+        "Health & Wellness",
+        "Relationships",
+        "Productivity & Career",
+        "Self-Help & Growth",
+        "Lifestyle & Culture",
+        "Weird & Absurd"
+      ]
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "views": {
+      "type": "integer"
+    },
+    "lastViewed": {
+      "type": "datetime"
+    },
+    "featuredInPopular": {
+      "type": "boolean"
+    },
+    "storyId": {
+      "type": "integer"
+    }
+  }
+}
